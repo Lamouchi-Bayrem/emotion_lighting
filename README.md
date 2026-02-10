@@ -93,8 +93,8 @@ Streamlit UI Visualization
 ```bash
 git clone https://github.com/your-username/facial-emotion-mood-lighting.git
 cd facial-emotion-mood-lighting
-``
-##2️⃣ Install Dependencies
+```
+### 2️⃣ Install Dependencies
 pip install -r requirements.txt
 
 
@@ -113,7 +113,7 @@ Or using the launcher:
 
 python run.py
 
-4️⃣ Open in Browser
+###4️⃣ Open in Browser
 http://localhost:8501
 
 🚀 Usage Guide
@@ -125,7 +125,7 @@ Allow camera permissions
 
 Ensure your face is centered and well-lit
 
-💡 Lighting Control
+###💡 Lighting Control
 
 Turn lighting ON / OFF
 
@@ -133,7 +133,7 @@ Adjust brightness
 
 Lighting color updates automatically based on emotion
 
-📊 Emotion Dashboard
+###📊 Emotion Dashboard
 
 Live emotion label
 
@@ -143,7 +143,7 @@ Average emotion over recent frames
 
 Current lighting color preview
 
-🎛 Calibration Mode
+###🎛 Calibration Mode
 
 Enable calibration to manually test colors
 
@@ -163,7 +163,7 @@ No cloud APIs involved
 
 Logs contain only emotion labels + timestamps
 
-🧯 Troubleshooting
+###🧯 Troubleshooting
 ❌ DeepFace Model Download Issues
 
 Ensure stable internet
@@ -262,4 +262,5 @@ Streamlit – Web application framework
 OpenCV – Computer vision processing
 
 NumPy – Numerical computing
+
 
