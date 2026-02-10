@@ -98,7 +98,7 @@ cd facial-emotion-mood-lighting
 pip install -r requirements.txt
 
 
-⚠️ Note
+###⚠️ Note
 DeepFace downloads pre-trained models automatically on first run
 (~300–500 MB, requires internet).
 
@@ -262,5 +262,6 @@ Streamlit – Web application framework
 OpenCV – Computer vision processing
 
 NumPy – Numerical computing
+
 
 
