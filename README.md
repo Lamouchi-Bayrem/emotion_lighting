@@ -60,4 +60,206 @@ The system captures live video from a webcam, analyzes facial expressions using 
 ---
 
 ## 🧠 System Architecture
+Webcam
+↓
+OpenCV Frame Capture
+↓
+DeepFace Emotion Detection
+↓
+Emotion Aggregation & Smoothing
+↓
+Lighting Controller (Simulated)
+↓
+Streamlit UI Visualization
+## 🧩 Requirements
+
+### Software
+- Python **3.8+**
+- Streamlit
+- OpenCV
+- DeepFace
+- NumPy
+- Pillow
+
+### Hardware
+- Webcam / Camera device
+- Modern web browser (Chrome, Firefox, Edge)
+
+---
+
+## ⚙️ Installation
+
+### 1️⃣ Clone the Repository
+```bash
+git clone https://github.com/your-username/facial-emotion-mood-lighting.git
+cd facial-emotion-mood-lighting
+``
+##2️⃣ Install Dependencies
+pip install -r requirements.txt
+
+
+⚠️ Note
+DeepFace downloads pre-trained models automatically on first run
+(~300–500 MB, requires internet).
+
+###3️⃣ Run the Application
+
+Using Streamlit:
+
+streamlit run app.py
+
+
+Or using the launcher:
+
+python run.py
+
+4️⃣ Open in Browser
+http://localhost:8501
+
+🚀 Usage Guide
+📷 Start Camera
+
+Click Start Camera
+
+Allow camera permissions
+
+Ensure your face is centered and well-lit
+
+💡 Lighting Control
+
+Turn lighting ON / OFF
+
+Adjust brightness
+
+Lighting color updates automatically based on emotion
+
+📊 Emotion Dashboard
+
+Live emotion label
+
+Emotion confidence scores
+
+Average emotion over recent frames
+
+Current lighting color preview
+
+🎛 Calibration Mode
+
+Enable calibration to manually test colors
+
+Useful for demos or preference tuning
+
+🔐 Privacy & Security
+
+🔒 Designed with privacy in mind
+
+All processing happens locally
+
+No images or videos are stored
+
+No facial embeddings are saved
+
+No cloud APIs involved
+
+Logs contain only emotion labels + timestamps
+
+🧯 Troubleshooting
+❌ DeepFace Model Download Issues
+
+Ensure stable internet
+
+Restart application after download
+
+Models are cached for future use
+
+😐 No Face Detected
+
+Improve lighting
+
+Face camera directly
+
+Remove masks or obstructions
+
+Adjust camera angle
+
+🤔 Emotion Detection Accuracy
+
+Use frontal face position
+
+Avoid extreme lighting
+
+Maintain neutral expression during calibration
+
+🐢 Performance Issues
+
+Close other camera apps
+
+Reduce background processes
+
+Lower camera resolution if needed
+
+🌐 Smart Light Integration (Optional)
+
+Currently, lighting is simulated.
+
+You can integrate real smart lights by replacing the lighting controller:
+
+Philips Hue → phue
+
+LIFX → lifxlan
+
+Tuya / Generic APIs → REST
+
+IoT / MQTT → paho-mqtt
+
+Example:
+
+# lighting_controller.py
+def set_emotion_color(self, color):
+    api.set_color(color)
+
+🔮 Future Enhancements
+
+ Real smart light hardware integration
+
+ Multi-emotion blending
+
+ User-defined emotion-color mapping
+
+ Schedule-based lighting automation
+
+ Mobile application
+
+ Multi-user emotion detection
+
+ Personalized emotion-color learning model
+
+📂 Project Structure (Example)
+├── app.py
+├── run.py
+├── lighting_controller.py
+├── emotion_detector.py
+├── requirements.txt
+├── README.md
+└── assets/
+
+📜 License
+
+This project is released as-is for:
+
+Educational use
+
+Research
+
+Personal & portfolio projects
+
+🙏 Acknowledgments
+
+DeepFace – Facial emotion recognition
+
+Streamlit – Web application framework
+
+OpenCV – Computer vision processing
+
+NumPy – Numerical computing
 
