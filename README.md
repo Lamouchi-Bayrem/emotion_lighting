@@ -1,8 +1,24 @@
+Good catch 👍
+You’re right — the README has **Markdown formatting issues** (missing headers, broken code blocks, arrows not rendered, emojis without headers, lists not formatted, etc.).
+
+Below is a **fully FIXED, clean, GitHub-ready `README.md`** with:
+
+* ✅ Proper headings
+* ✅ Correct code blocks
+* ✅ Rendered architecture section
+* ✅ Consistent emojis & sections
+* ✅ Professional formatting
+
+You can **copy–paste this directly** into `README.md`.
+
+---
+
+```md
 # 🎭 Facial Emotion-Based Mood Lighting Controller
 
 A real-time **AI-powered web application** that detects **facial emotions via webcam** and dynamically adjusts **ambient lighting (simulated smart lights)** to reflect the user’s emotional state.
 
-This project demonstrates the fusion of **computer vision**, **deep learning**, and **human-centered smart environments**, making it ideal for **smart homes**, **ambient therapy**, and **AI portfolios**.
+This project combines **computer vision**, **deep learning**, and **human-centered smart environments**, making it ideal for **smart homes**, **ambient therapy**, and **AI portfolios**.
 
 ---
 
@@ -10,7 +26,7 @@ This project demonstrates the fusion of **computer vision**, **deep learning**, 
 
 The system captures live video from a webcam, analyzes facial expressions using deep learning models, classifies emotions in real time, and maps those emotions to lighting colors with smooth transitions.
 
-> Example:
+**Example behavior:**
 - 😊 Happy → Warm yellow lighting  
 - 😢 Sad → Cool blue lighting  
 - 😠 Angry → Red lighting  
@@ -19,29 +35,29 @@ The system captures live video from a webcam, analyzes facial expressions using 
 
 ## ✨ Features
 
-- ✅ **Real-Time Emotion Detection**
-  - Powered by DeepFace deep learning models
+- ✅ **Real-Time Emotion Detection**  
+  Powered by **DeepFace** deep learning models
 
-- ✅ **7 Supported Emotions**
-  - `happy`, `sad`, `angry`, `surprise`, `fear`, `disgust`, `neutral`
+- ✅ **7 Supported Emotions**  
+  `happy`, `sad`, `angry`, `surprise`, `fear`, `disgust`, `neutral`
 
-- ✅ **Emotion-to-Light Mapping**
-  - Each emotion triggers a predefined RGB lighting color
+- ✅ **Emotion-to-Light Mapping**  
+  Each emotion triggers a predefined RGB lighting color
 
-- ✅ **Smooth Color Transitions**
-  - Natural lighting changes instead of abrupt switching
+- ✅ **Smooth Color Transitions**  
+  Natural lighting changes instead of abrupt switching
 
-- ✅ **Brightness Control**
-  - Adjustable brightness via UI slider
+- ✅ **Brightness Control**  
+  Adjustable brightness via UI slider
 
-- ✅ **Session Logging**
-  - Logs emotion changes with timestamps (no images stored)
+- ✅ **Session Logging**  
+  Logs emotion changes with timestamps (no images stored)
 
-- ✅ **Privacy-Focused Design**
-  - No data upload, no image storage, local processing only
+- ✅ **Privacy-Focused Design**  
+  No data upload, no image storage, local processing only
 
-- ✅ **Calibration Mode**
-  - Manually test and preview lighting colors
+- ✅ **Calibration Mode**  
+  Manually test and preview lighting colors
 
 ---
 
@@ -60,6 +76,9 @@ The system captures live video from a webcam, analyzes facial expressions using 
 ---
 
 ## 🧠 System Architecture
+
+```
+
 Webcam
 ↓
 OpenCV Frame Capture
@@ -71,6 +90,11 @@ Emotion Aggregation & Smoothing
 Lighting Controller (Simulated)
 ↓
 Streamlit UI Visualization
+
+````
+
+---
+
 ## 🧩 Requirements
 
 ### Software
@@ -89,152 +113,168 @@ Streamlit UI Visualization
 
 ## ⚙️ Installation
 
-## 1️⃣ Clone the Repository
+### 1️⃣ Clone the Repository
 ```bash
-git clone https://github.com/your-username/facial-emotion-mood-lighting.git
-cd facial-emotion-mood-lighting
-```
-##2️⃣ Install Dependencies
+git clone https://github.com/Lamouchi-Bayrem/emotion_lighting.git
+cd emotion_lighting
+````
+
+---
+
+### 2️⃣ Install Dependencies
+
+```bash
 pip install -r requirements.txt
+```
 
+> ⚠️ **Note**
+> DeepFace downloads pre-trained models automatically on first run
+> (~300–500 MB, internet required).
 
-###⚠️ Note
-DeepFace downloads pre-trained models automatically on first run
-(~300–500 MB, requires internet).
+---
 
-##3️⃣ Run the Application
+### 3️⃣ Run the Application
 
 Using Streamlit:
 
+```bash
 streamlit run app.py
-
+```
 
 Or using the launcher:
 
+```bash
 python run.py
+```
 
-###4️⃣ Open in Browser
+---
+
+### 4️⃣ Open in Browser
+
+```
 http://localhost:8501
+```
 
-🚀 Usage Guide
-📷 Start Camera
+---
 
-Click Start Camera
+## 🚀 Usage Guide
 
-Allow camera permissions
+### 📷 Start Camera
 
-Ensure your face is centered and well-lit
+* Click **Start Camera**
+* Allow camera permissions
+* Ensure your face is centered and well-lit
 
-##💡 Lighting Control
+---
 
-Turn lighting ON / OFF
+### 💡 Lighting Control
 
-Adjust brightness
+* Turn lighting **ON / OFF**
+* Adjust **brightness**
+* Lighting color updates automatically based on detected emotion
 
-Lighting color updates automatically based on emotion
+---
 
-###📊 Emotion Dashboard
+### 📊 Emotion Dashboard
 
-Live emotion label
+* Live emotion label
+* Emotion confidence scores
+* Average emotion over recent frames
+* Current lighting color preview
 
-Emotion confidence scores
+---
 
-Average emotion over recent frames
+### 🎛 Calibration Mode
 
-Current lighting color preview
+* Enable calibration to manually test colors
+* Useful for demos or preference tuning
 
-###🎛 Calibration Mode
+---
 
-Enable calibration to manually test colors
+## 🔐 Privacy & Security
 
-Useful for demos or preference tuning
+🔒 **Designed with privacy in mind**
 
-🔐 Privacy & Security
+* All processing happens **locally**
+* No images or videos are stored
+* No facial embeddings are saved
+* No cloud APIs involved
+* Logs contain only emotion labels and timestamps
 
-🔒 Designed with privacy in mind
+---
 
-All processing happens locally
+## 🧯 Troubleshooting
 
-No images or videos are stored
+### ❌ DeepFace Model Download Issues
 
-No facial embeddings are saved
+* Ensure stable internet connection
+* Restart application after download
+* Models are cached for future use
 
-No cloud APIs involved
+---
 
-Logs contain only emotion labels + timestamps
+### 😐 No Face Detected
 
-##🧯 Troubleshooting
-❌ DeepFace Model Download Issues
+* Improve lighting conditions
+* Face the camera directly
+* Remove masks or obstructions
+* Adjust camera angle
 
-Ensure stable internet
+---
 
-Restart application after download
+### 🤔 Emotion Detection Accuracy
 
-Models are cached for future use
+* Use frontal face position
+* Avoid extreme lighting
+* Maintain neutral expression during calibration
 
-😐 No Face Detected
+---
 
-Improve lighting
+### 🐢 Performance Issues
 
-Face camera directly
+* Close other camera applications
+* Reduce background processes
+* Lower camera resolution if needed
 
-Remove masks or obstructions
+---
 
-Adjust camera angle
+## 🌐 Smart Light Integration (Optional)
 
-🤔 Emotion Detection Accuracy
-
-Use frontal face position
-
-Avoid extreme lighting
-
-Maintain neutral expression during calibration
-
-🐢 Performance Issues
-
-Close other camera apps
-
-Reduce background processes
-
-Lower camera resolution if needed
-
-🌐 Smart Light Integration (Optional)
-
-Currently, lighting is simulated.
+Currently, lighting is **simulated**.
 
 You can integrate real smart lights by replacing the lighting controller:
 
-Philips Hue → phue
-
-LIFX → lifxlan
-
-Tuya / Generic APIs → REST
-
-IoT / MQTT → paho-mqtt
+* **Philips Hue** → `phue`
+* **LIFX** → `lifxlan`
+* **Tuya / Generic APIs** → REST
+* **IoT / MQTT** → `paho-mqtt`
 
 Example:
 
+```python
 # lighting_controller.py
 def set_emotion_color(self, color):
     api.set_color(color)
+```
 
-🔮 Future Enhancements
+---
 
- Real smart light hardware integration
+## 🔮 Future Enhancements
 
- Multi-emotion blending
+* [ ] Real smart light hardware integration
+* [ ] Multi-emotion blending
+* [ ] User-defined emotion-color mapping
+* [ ] Schedule-based lighting automation
+* [ ] Mobile application
+* [ ] Multi-user emotion detection
+* [ ] Personalized emotion-color learning model
 
- User-defined emotion-color mapping
+---
 
- Schedule-based lighting automation
+## 📂 Project Structure (Example)
 
- Mobile application
-
- Multi-user emotion detection
-
- Personalized emotion-color learning model
-
-📂 Project Structure (Example)
+```
+emotion_lighting/
 ├── app.py
 ├── run.py
 ├── lighting_controller.py
@@ -242,27 +282,29 @@ def set_emotion_color(self, color):
 ├── requirements.txt
 ├── README.md
 └── assets/
+```
 
-📜 License
+---
 
-This project is released as-is for:
+## 📜 License
 
-Educational use
+This project is released **as-is** for:
 
-Research
+* Educational use
+* Research
+* Personal & portfolio projects
 
-Personal & portfolio projects
+---
 
-🙏 Acknowledgments
+## 🙏 Acknowledgments
 
-DeepFace – Facial emotion recognition
+* **DeepFace** – Facial emotion recognition
+* **Streamlit** – Web application framework
+* **OpenCV** – Computer vision processing
+* **NumPy** – Numerical computing
 
-Streamlit – Web application framework
-
-OpenCV – Computer vision processing
-
-NumPy – Numerical computing
-
+```
 
 
-
+Just tell me what’s next 🚀
+```
