@@ -89,12 +89,12 @@ Streamlit UI Visualization
 
 ## ⚙️ Installation
 
-### 1️⃣ Clone the Repository
+## 1️⃣ Clone the Repository
 ```bash
 git clone https://github.com/your-username/facial-emotion-mood-lighting.git
 cd facial-emotion-mood-lighting
 ```
-### 2️⃣ Install Dependencies
+##2️⃣ Install Dependencies
 pip install -r requirements.txt
 
 
@@ -102,7 +102,7 @@ pip install -r requirements.txt
 DeepFace downloads pre-trained models automatically on first run
 (~300–500 MB, requires internet).
 
-###3️⃣ Run the Application
+##3️⃣ Run the Application
 
 Using Streamlit:
 
@@ -125,7 +125,7 @@ Allow camera permissions
 
 Ensure your face is centered and well-lit
 
-###💡 Lighting Control
+##💡 Lighting Control
 
 Turn lighting ON / OFF
 
@@ -163,7 +163,7 @@ No cloud APIs involved
 
 Logs contain only emotion labels + timestamps
 
-###🧯 Troubleshooting
+##🧯 Troubleshooting
 ❌ DeepFace Model Download Issues
 
 Ensure stable internet
@@ -262,6 +262,7 @@ Streamlit – Web application framework
 OpenCV – Computer vision processing
 
 NumPy – Numerical computing
+
 
 
 
