@@ -303,8 +303,5 @@ This project is released **as-is** for:
 * **OpenCV** – Computer vision processing
 * **NumPy** – Numerical computing
 
-```
 
 
-Just tell me what’s next 🚀
-```
