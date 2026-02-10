@@ -1,19 +1,4 @@
-Good catch 👍
-You’re right — the README has **Markdown formatting issues** (missing headers, broken code blocks, arrows not rendered, emojis without headers, lists not formatted, etc.).
 
-Below is a **fully FIXED, clean, GitHub-ready `README.md`** with:
-
-* ✅ Proper headings
-* ✅ Correct code blocks
-* ✅ Rendered architecture section
-* ✅ Consistent emojis & sections
-* ✅ Professional formatting
-
-You can **copy–paste this directly** into `README.md`.
-
----
-
-```md
 # 🎭 Facial Emotion-Based Mood Lighting Controller
 
 A real-time **AI-powered web application** that detects **facial emotions via webcam** and dynamically adjusts **ambient lighting (simulated smart lights)** to reflect the user’s emotional state.
@@ -302,6 +287,7 @@ This project is released **as-is** for:
 * **Streamlit** – Web application framework
 * **OpenCV** – Computer vision processing
 * **NumPy** – Numerical computing
+
 
 
 
