@@ -1,6 +1,7 @@
 
 # 🎭 Facial Emotion-Based Mood Lighting Controller
-<img width="1920" height="1020" alt="python_4tBcYU0cj9" src="https://github.com/user-attachments/assets/481dfec0-c510-4f1b-963a-fcef80940f48" />
+<img width="1920" height="991" alt="python_eQ9JtyMsK4" src="https://github.com/user-attachments/assets/8dc7d156-9f08-4c33-bbd6-fd9d4892367c" />
+
 
 
 A real-time **AI-powered web application** that detects **facial emotions via webcam** and dynamically adjusts **ambient lighting (simulated smart lights)** to reflect the user’s emotional state.
@@ -289,6 +290,7 @@ This project is released **as-is** for:
 * **Streamlit** – Web application framework
 * **OpenCV** – Computer vision processing
 * **NumPy** – Numerical computing
+
 
 
 
