@@ -1,6 +1,4 @@
-"""
-Run the Emotion-Based Mood Lighting Streamlit app
-"""
+
 
 import subprocess
 import sys
