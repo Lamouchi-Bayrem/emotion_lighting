@@ -4,6 +4,7 @@
 
 
 
+
 A real-time **AI-powered web application** that detects **facial emotions via webcam** and dynamically adjusts **ambient lighting (simulated smart lights)** to reflect the user’s emotional state.
 
 This project combines **computer vision**, **deep learning**, and **human-centered smart environments**, making it ideal for **smart homes**, **ambient therapy**, and **AI portfolios**.
