@@ -1,6 +1,4 @@
-"""
-Streamlit Web App for Facial Emotion-Based Mood Lighting Controller
-"""
+
 
 import streamlit as st
 import cv2
